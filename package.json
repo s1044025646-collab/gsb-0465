@@ -1,0 +1,24 @@
+{
+  "name": "fits-mini-backend",
+  "version": "1.0.0",
+  "description": "FITS 主图像卡片解析与物理像素缩放后端",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run build && node --test \"dist/tests/*.test.js\"",
+    "build": "tsc",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo",
+    "fits": "node dist/src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
